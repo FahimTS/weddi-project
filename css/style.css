@@ -308,7 +308,40 @@ i.fa-solid.fa-heart.custom {
     overflow: hidden;
     width: 330px;
 }
-
+.img_overlay_two{
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease 0s;
+}
+.story_item:hover .img_overlay_two{
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.img_overlay_two ul a{
+    height: 55px;
+    width: 55px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    line-height: 55px;
+    font-size: 18px;
+    color: rgb(102, 102, 102);
+    transition: all 0.4s ease 0s;
+}
+.img_overlay_two ul a:hover {
+    background: rgb(240, 57, 77);
+    color: rgb(255, 255, 255);
+}
 .story_img img {
     width: 100%;
     transition: all 0.4s ease 0s;
@@ -1037,8 +1070,7 @@ section.gift_registry {
     text-align: center;
     position: absolute;
     top: 30%;
-    left: 50%;
-    transform: translate(-50%);
+    left: 40.5%;
 }
 
 .thank, .you {
@@ -1099,3 +1131,10 @@ i.custom {
     transition: all 0.4s ease 0s;
 }
 
+.divider_overlay_two{
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    opacity: 0.3;
+    z-index: -1;
+}
